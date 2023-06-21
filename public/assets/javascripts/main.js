@@ -6,8 +6,9 @@ function active_navbar_mini(){
     main_navbar.classList.add('enactive-navbar');
     navbar_hidden.style.display = 'flex';
 
-    // chiều rộng của body là 100% - 40px
-    document.body.style.width = 'calc(100% - 40px)';
+    // chiều rộng của class container là 100% - 40px
+    document.querySelector('.container').style.width = 'calc(100% - 40px)';
+    document.querySelector('.container').style.marginLeft = '40px';
 
     icon_right_navbar.addEventListener('click', () => {
         main_navbar.classList.toggle('active-navbar');

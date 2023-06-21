@@ -23,7 +23,7 @@ class RecordStoreController extends Controller
 
     public function edit($id)
     {
-        //
+        return view('pages.RecordStore.edit');
     }
 
     public function update(Request $request, $id)

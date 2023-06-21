@@ -143,7 +143,7 @@
                             01/01/2021
                         </td>
                         <td class="table__action">
-                            <a href="">
+                            <a href="{{ route('RecordStore.edit', $i) }}">
                                 Cập nhập
                             </a>
                         </td>
