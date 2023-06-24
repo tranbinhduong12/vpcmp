@@ -517,8 +517,7 @@ body{
     font-weight: 700;
     margin-bottom: 5px;
 }
-
-.form-group .input{
+.input{
     width: 100%;
     padding: 12px 16px;
     font-size: 16px;
@@ -530,5 +529,57 @@ body{
 }
 
 .text-danger{
-    color: red;
+    color: red !important;
 }
+
+.text-center{
+    text-align: center;
+}
+
+.text-under{
+    text-decoration: underline;
+}
+
+.switch-tab{
+    display: flex;
+    margin-top: 24px;
+    border-radius: 24px;
+    border: 1px solid #B65100;
+    display: inline-flex;
+}
+
+.switch-tab .btn{
+    border-radius: 24px;
+    gap: 10px;
+    padding: 8px 24px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.671);
+}
+
+.switch-tab .btn-active{
+    background-color: #B65100 !important;
+    color: #FFFFFF !important;
+}
+
+.icon-process{
+    font-size: 8px;
+    transform: translateY(-3px);
+}
+
+.text-info{
+    color: #347AFF;
+}
+
+.input-upload{
+    display: none;
+}
+
+.btn-upload{
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+.btn-upload i{
+    color: #FF7506;    
+}
+

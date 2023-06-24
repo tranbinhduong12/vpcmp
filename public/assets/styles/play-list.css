@@ -41,6 +41,7 @@
     text-align: left;
     padding-bottom: 8px;
     border-bottom: 1px solid #72728896;
+    width: 100%;
 }
 
 .infomation table tr th{
@@ -186,4 +187,17 @@ input[type="checkbox"] {
 /* tr last add border */
 .table-group-ban-ghi tr:last-child td{
     border-bottom: 1px solid #72728848
+}
+
+.input-upload{
+    display: none;
+}
+
+.btn-upload{
+    padding: 8px 16px;
+    font-size: 16px;
+}
+
+.btn-upload i{
+    color: #FF7506;    
 }

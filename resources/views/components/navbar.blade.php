@@ -23,31 +23,36 @@
                     PlayList
                 </li>
             </a>
-            <a href="" class="navbar__menu__list__item__link">
-                <li class="navbar__menu__list__item">
+            <a href="{{ route('SchedulePlay.index') }}" class="navbar__menu__list__item__link">
+                <li class="navbar__menu__list__item{{ request()->routeIs('SchedulePlay.*') ? ' active' : '' }}">
                     <i class="fa-regular fa-calendar-days"></i>
                     Lập lịch phát
                 </li>
             </a>
             <div class="navbar__menu__list__item__link">
-                <li class="navbar__menu__list__item">
+                <li class="navbar__menu__list__item{{ request()->routeIs('Manage.*') ? ' active' : '' }}">
                     <i class="fa-regular fa-file-lines"></i>
                     Quản lý
                     <i class="fa-solid fa-ellipsis-vertical dot-list"></i>
                     <ul class="sub_navbar">
-                        <a href="" class="navbar__menu__list__item__link">
+                        <a href="{{ route('Manage.Contract.index') }}" class="navbar__menu__list__item__link">
                             <li class="sub_navbar__menu__list__item">
-                                Lập lịch phát
+                                Quản lý hợp đồng
                             </li>
                         </a>
                         <a href="" class="navbar__menu__list__item__link">
                             <li class="sub_navbar__menu__list__item">
-                                Lập lịch phát
+                                Quản lý thiết bị
                             </li>
                         </a>
                         <a href="" class="navbar__menu__list__item__link">
                             <li class="sub_navbar__menu__list__item">
-                                Lập lịch phát
+                                Quản lý ủy quyền
+                            </li>
+                        </a>
+                        <a href="" class="navbar__menu__list__item__link">
+                            <li class="sub_navbar__menu__list__item">
+                                Quản lý sử dụng
                             </li>
                         </a>
                     </ul>
