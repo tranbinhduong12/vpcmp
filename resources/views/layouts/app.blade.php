@@ -7,6 +7,7 @@
 
     <script src="https://kit.fontawesome.com/c71231073e.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="{{ asset('logo/favicon.ico') }}" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/styles/main.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/styles/modal.css') }}">
     {{-- import jquery cdn --}}

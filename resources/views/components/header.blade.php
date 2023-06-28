@@ -15,7 +15,7 @@
         <div class="profile-user">
             <img src="{{ asset('assets/images/logo.png') }}" alt="">
             <div class="profile-user-name">
-                <span class="name">Nguyễn Văn A</span>
+                <span class="name">Trần Bình Dương</span>
                 <br>
                 <span class="role">Admin</span>
             </div>

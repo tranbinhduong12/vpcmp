@@ -13,8 +13,21 @@
             $('.modal-view-action').css('display', 'flex');
         });
 
-        $('.close-modal-active').click(function() {
+        $('.close-modal-view').click(function() {
             $('.modal-view-action').css('display', 'none');
+        });
+
+        $('.btn-upload').click(function() {
+            $('#input-upload').click();
+        });
+
+        // close-modal-view 
+        $('.close-modal-view').click(function() {
+            $('.modal-view').css('display', 'none');
+        });
+
+        $('.open-modal-view').click(function() {
+            $('.modal-view').css('display', 'flex');
         });
     </script>
 @endsection
@@ -42,7 +55,7 @@
                     Chỉnh sửa hợp đồng
                 </p>
             </a>
-            <div style="margin-top: 20px">
+            <div style="margin-top: 20px" class="open-modal-view">
                 <i class="fa-solid fa-file-lines"></i>
                 <p>
                     Gia hạn hợp đồng
@@ -62,7 +75,7 @@
             <table>
                 <tr>
                     <th class="text-title">
-                        Số hợp đồng: 
+                        Số hợp đồng:
                     </th>
                     <th>
                         123456
@@ -70,7 +83,7 @@
                 </tr>
                 <tr>
                     <th class="text-title">
-                        Tên hợp đồng: 
+                        Tên hợp đồng:
                     </th>
                     <th>
                         Hợp đồng ủy quyền
@@ -108,7 +121,7 @@
             <table>
                 <tr>
                     <th class="text-title">
-                        Đính kèm tệp: 
+                        Đính kèm tệp:
                     </th>
                     <th>
                         <div>
@@ -127,43 +140,43 @@
         <div class="content-info">
             <table>
                 <tr>
-                    <tr>
-                        <th class="text-title text-title-2">
-                            <i class="fa-solid fa-circle-exclamation"></i>
-                            Mức nhuận bút
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="text-title">
-                            Quyền tác giả:
-                        </th>
-                        <th>
-                            0%
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="text-title">
-                            Quyền liên quan:
-                        </th>
-                    </tr>
-                    <tr>
-                        <th style="padding-left: 0">
-                            Quyền của người biểu diễn:
-                        </th>
-                        <th>
-                            50%
-                        </th>
-                    </tr>
-                    <tr>
-                        <th style="padding-left: 0">
-                            Quyền của nhà sản xuất: <br>
-                            (Bản ghi/video)
-                        </th>
-                        <th>
-                            50%
-                        </th>
-                    </tr>
-                    
+                <tr>
+                    <th class="text-title text-title-2">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        Mức nhuận bút
+                    </th>
+                </tr>
+                <tr>
+                    <th class="text-title">
+                        Quyền tác giả:
+                    </th>
+                    <th>
+                        0%
+                    </th>
+                </tr>
+                <tr>
+                    <th class="text-title">
+                        Quyền liên quan:
+                    </th>
+                </tr>
+                <tr>
+                    <th style="padding-left: 0">
+                        Quyền của người biểu diễn:
+                    </th>
+                    <th>
+                        50%
+                    </th>
+                </tr>
+                <tr>
+                    <th style="padding-left: 0">
+                        Quyền của nhà sản xuất: <br>
+                        (Bản ghi/video)
+                    </th>
+                    <th>
+                        50%
+                    </th>
+                </tr>
+
                 </tr>
             </table>
         </div>
@@ -202,7 +215,7 @@
                 </tr>
                 <tr>
                     <th class="text-title">
-                        Giới tính:       
+                        Giới tính:
                     </th>
                     <th>
                         Nam
@@ -270,7 +283,7 @@
                     <th>
                         69/53, Nguyễn Gia Trí, Phường 25, Quận Bình Thạnh, Thành phố Hồ Chí Minh
                     </th>
-                </tr>                
+                </tr>
             </table>
         </div>
 
@@ -315,7 +328,7 @@
                     <th>
                         ABC Bank
                     </th>
-                </tr>                
+                </tr>
             </table>
         </div>
 
@@ -328,7 +341,7 @@
             </h2>
             <textarea name="" placeholder="Cho chúng tôi biết lý do hủy hợp đồng ủy quyền này..."></textarea>
             <div class="button-group">
-                <button type="button" class="btn btn-outline close-modal-active" >
+                <button type="button" class="btn btn-outline close-modal-view">
                     Quay lại
                 </button>
                 <button class="btn">
@@ -337,4 +350,89 @@
             </div>
         </form>
     </div>
+
+    <div class="modal-view">
+        <form class="modal-content">
+            <h2 class="text-center"> Gia hạn uỷ quyền tác phẩm </h2>
+            <div class="group-flex">
+                <div class="item-flex">
+                    <p class="text-title">
+                        Thời gian gia hạn <span class="text-danger">*</span>
+                    </p>
+                    <br>
+                    <p>
+                        Từ ngày: 02/08/2021
+                    </p>
+                    <div class="flex-form">
+                        <label>Đến ngày:</label>
+                        <input type="date" class="input" name="" value="2020-10-10">
+                    </div>
+                    <span>
+                        Lưu ý: Thời gian bắt đầu gia hạn hợp đồng mới được tính sau ngày hết hạn hợp đồng cũ một ngày.
+                    </span>
+
+                    <div class="flex-form" style="display: flex; margin-top: 80px">
+                        <label>Đính kèm tệp: </label>
+                        <div style="margin-left: 10px">
+                            <div class="input-radio">
+                                <input id="input-upload" class="input-upload" type="file" name="" required>
+                                <button class="btn btn-outline btn-upload" type="button" style="margin-bottom: 10px">
+                                    <i class="fa-solid fa-upload"></i>
+                                    Tải lên
+                                </button>
+                                <p>
+                                    <i class="fa-regular fa-file-word"></i>
+                                    hetthuongcannho.doc
+                                    <i class="fa-solid fa-times text-danger"></i>
+                                </p>
+                                <p>
+                                    <i class="fa-regular fa-file-word"></i>
+                                    hetthuongcannho.doc
+                                    <i class="fa-solid fa-times text-danger"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-flex">
+                    <p class="text-title">
+                        Mức nhuận bút <span class="text-danger">*</span>
+                    </p>
+                    <div class="flex-form">
+                        <input type="checkbox" class="checkbox" name="" id="quyen-tac-gia">
+                        <label for="quyen-tac-gia">Quyền tác giả</label>
+                        <input type="text" class="input" name="" value="0" style="width: 60px"> <label
+                            for="">%</label>
+                    </div>
+                    <div class="flex-form">
+                        <input type="checkbox" class="checkbox" name="" id="quyen-lien-quan">
+                        <label for="quyen-lien-quan">Quyền liên quan</label>
+                    </div>
+                    <div style="margin-left: 30px">
+                        <div class="flex-form">
+                            <input type="checkbox" class="checkbox" name="" id="quyen-bieu-dien">
+                            <label for="quyen-bieu-dien">Quyền của người biểu diễn</label>
+                            <input type="text" class="input" name="" value="0" style="width: 60px">
+                            <label for="">%</label>
+                        </div>
+                        <div class="flex-form">
+                            <input type="checkbox" class="checkbox" name="" id="quyen-san-xuat">
+                            <label for="quyen-san-xuat">Quyền của nhà sản xuất</label>
+                            <input type="text" class="input" name="" value="0" style="width: 60px">
+                            <label for="">%</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-group">
+                <button type="button" class="btn btn-outline close-modal-view">
+                    Hủy
+                </button>
+                <button class="btn">
+                    Lưu
+                </button>
+            </div>
+        </form>
+    </div>
+
 @endsection

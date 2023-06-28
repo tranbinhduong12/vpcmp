@@ -79,7 +79,7 @@
             </div>
         </div>
     </div>
-    <div class="modal-view-action" style="display: flex">
+    <div class="modal-view-action">
         <div class="modal-content">
             <h2 class="text-center" style="margin-bottom: 30px">
                 Thêm bản ghi mới

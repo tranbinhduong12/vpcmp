@@ -1,0 +1,31 @@
+.choose-option{
+    margin-top: 0;
+}
+
+.input-search{
+    margin-top: 0;
+}
+
+.table table{
+    width: auto;
+    white-space: nowrap
+}
+
+.table {
+    /* overflow only scoll x */
+    overflow-x: auto;
+}
+
+/* css scoll */
+.table::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.table::-webkit-scrollbar-track {
+    background: #888;
+}
+
+.table::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+}

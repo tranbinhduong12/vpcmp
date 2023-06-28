@@ -40,7 +40,7 @@
                                 Quản lý hợp đồng
                             </li>
                         </a>
-                        <a href="" class="navbar__menu__list__item__link">
+                        <a href="{{ route('Manage.Device.index') }}" class="navbar__menu__list__item__link">
                             <li class="sub_navbar__menu__list__item">
                                 Quản lý thiết bị
                             </li>

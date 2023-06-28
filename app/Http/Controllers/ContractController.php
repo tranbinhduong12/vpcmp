@@ -38,7 +38,7 @@ class ContractController extends Controller
 
     public function edit($id)
     {
-        //
+        return view('pages.contract.edit');
     }
 
     public function update(Request $request, $id)

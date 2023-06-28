@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContractController;
+use App\Http\Controllers\DeviceController;
 use App\Http\Controllers\PlayListController;
 use App\Http\Controllers\RecordStoreController;
 use App\Http\Controllers\SchedulePlaylistController;
@@ -68,4 +69,14 @@ Route::resource('contract-manage', ContractController::class)->names([
     'update' => 'Manage.Contract.update',
     'show' => 'Manage.Contract.show',
     'destroy' => 'Manage.Contract.destroy',
+]);
+
+Route::resource('device-manage', DeviceController::class)->names([
+    'index' => 'Manage.Device.index',
+    'create' => 'Manage.Device.create',
+    'store' => 'Manage.Device.store',
+    'edit' => 'Manage.Device.edit',
+    'update' => 'Manage.Device.update',
+    'show' => 'Manage.Device.show',
+    'destroy' => 'Manage.Device.destroy',
 ]);
