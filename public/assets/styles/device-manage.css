@@ -29,3 +29,154 @@
 .table::-webkit-scrollbar-thumb {
     background: #f1f1f1;
 }
+
+.group-flex{
+    width: 90%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    width: 40%;
+    max-width: 570px;
+}
+
+.form-input{
+    padding-left: 20px;
+    max-width: 350px;
+    width: 70%;
+    position: relative;
+}
+
+.flex-item table {
+    width: 100%;
+    display: flex;
+    white-space: nowrap
+}
+
+.flex-item table tbody{
+    width: 100%;
+}
+
+.flex-item table td{
+    padding-top: 20px;
+}
+
+.form-input textarea{
+    resize: vertical;
+    height: 120px;
+}
+
+.form-input input{
+    width: 100%;
+}
+
+.form-input .btn-eye{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.form-input .btn-eye i{
+    font-size: 20px;
+    color: #FF7506;
+}
+
+.group-flex .button-group{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.text-alert{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.info-group{
+    width: calc(100% - 80px);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 24px;
+    background-color: #2B2B3F;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.info-item{
+    width: 33%;
+    max-width: 340px;
+}
+
+.info-item .title-info{
+    font-size: 24px;
+    font-weight: 700;
+    color: #FF7506;
+}
+
+.image-device{
+    width: 340px;
+    height: 160px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.image-device img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-item table, .info-item table tbody{
+    width: 100%;
+}
+
+.info-item table tr{
+    display: flex;
+}
+
+.info-item table td{
+    padding-top: 25px;
+    font-weight: 400;
+    opacity: 0.7;
+    padding-left: 20px;
+}
+
+.info-item .text-title{
+    opacity: 1;
+    font-weight: 700;
+    white-space: nowrap;
+    padding-left: 0 !important;
+}
+
+.info-item--flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-content .form-group{
+    margin-top: 15px;
+}
+
+.form-group-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-group-flex input{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}

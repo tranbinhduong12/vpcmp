@@ -8,6 +8,7 @@ class AuthController extends Controller
 {
     public function showLoginForm()
     {
+        // test
         return view('auth.login');
     }
 
@@ -29,5 +30,14 @@ class AuthController extends Controller
         } else {
             return view('auth.reset-password-error');
         }
+    }
+
+    public function myAccount()
+    {
+        return view('auth.my-account');
+    }
+    public function myAccountEdit()
+    {
+        return view('auth.my-account-edit');
     }
 }

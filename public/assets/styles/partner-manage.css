@@ -1,0 +1,91 @@
+.table__checkbox{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.group-flex{
+    width: 90%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    width: 40%;
+    max-width: 570px;
+}
+
+.form-input{
+    padding-left: 20px;
+    max-width: 350px;
+    width: 70%;
+    position: relative;
+}
+
+.flex-item table {
+    width: 100%;
+    display: flex;
+    white-space: nowrap
+}
+
+.flex-item table tbody{
+    width: 100%;
+}
+
+.flex-item table td{
+    padding-top: 20px;
+}
+
+.form-input textarea{
+    resize: vertical;
+    height: 120px;
+}
+
+.form-input input{
+    width: 100%;
+}
+
+.form-input .btn-eye{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.form-input .btn-eye i{
+    font-size: 20px;
+    color: #FF7506;
+}
+
+.group-flex .button-group{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.text-alert{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group-flex{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.form-group-flex input{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}

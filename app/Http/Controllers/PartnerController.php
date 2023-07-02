@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DeviceController extends Controller
+class PartnerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class DeviceController extends Controller
      */
     public function index()
     {
-        return view('pages.device.index');
+        return view('pages.partner.index');
     }
 
     /**
@@ -23,7 +23,7 @@ class DeviceController extends Controller
      */
     public function create()
     {
-        return view('pages.device.create');
+        
     }
 
     /**
@@ -45,7 +45,7 @@ class DeviceController extends Controller
      */
     public function show($id)
     {
-        return view('pages.device.show');
+        //
     }
 
     /**
@@ -56,7 +56,7 @@ class DeviceController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('pages.partner.edit');
     }
 
     /**

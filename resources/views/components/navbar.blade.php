@@ -45,7 +45,7 @@
                                 Quản lý thiết bị
                             </li>
                         </a>
-                        <a href="" class="navbar__menu__list__item__link">
+                        <a href="{{ route('Manage.Partner.index') }}" class="navbar__menu__list__item__link">
                             <li class="sub_navbar__menu__list__item">
                                 Quản lý ủy quyền
                             </li>

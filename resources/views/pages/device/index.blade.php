@@ -30,6 +30,20 @@
                 }
             });
         });
+        // .modal-delete click to show modal
+        const modalDelete = document.querySelector('.modal-delete');
+        modalDelete.addEventListener('click', function() {
+            // .modal-alert display flex
+            const modalAlert = document.querySelector('.modal-alert');
+            modalAlert.style.display = 'flex';
+        });
+        // .btn-close click to close modal
+        const btnClose = document.querySelector('.btn-close');
+        btnClose.addEventListener('click', function() {
+            // .modal-alert display none
+            const modalAlert = document.querySelector('.modal-alert');
+            modalAlert.style.display = 'none';
+        });
     </script>
 @endsection
 
@@ -84,7 +98,7 @@
                 Khóa thiết bị
             </p>
         </div>
-        <div style="margin-top: 20px">
+        <div style="margin-top: 20px" class="modal-delete">
             <i class="fa-solid fa-trash-can" style="color: #FF4747"></i>
             <p>
                 Xóa thiết bị
@@ -173,6 +187,30 @@
                     <li>2</li>
                     <li>3</li>
                 </ul>
+            </div>
+        </div>
+        <div class="modal-alert">
+            <div class="modal-alert__content">
+                <div class="modal-alert__header">
+                    <h3>
+                        Xóa thiết bị
+                    </h3>
+                </div>
+                <div class="modal-alert__body">
+                    <p>
+                        Bạn có chắc chắn muốn xoá các thiết bị này? 
+                        <br>
+                        Hành động này không thể hoàn tác.
+                    </p>
+                </div>
+                <div class="modal-alert__footer">
+                    <button class="btn btn--secondary btn-close btn-outline">
+                        Hủy
+                    </button>
+                    <button class="btn btn--primary">
+                        Xóa
+                    </button>
+                </div>
             </div>
         </div>
     </div>
